@@ -1,0 +1,15 @@
+- name: Projects
+  url: /projects
+
+- name: People
+  url: /people/
+
+- name: Business and Engagement
+  url: /business/
+
+- name: Talks
+  url: /talks/
+
+- name: Contact
+  url: /contact/
+

@@ -1,0 +1,645 @@
+/*
+Welcome to Custom CSS!
+
+To learn how this works, see https://wp.me/PEmnE-Bt
+*/
+a:link {
+	color: #ffde00;
+}
+
+a:active, a:focus {
+	outline: 0;
+	border: none;
+}
+
+/* QUICK FIXXXXXX */
+dd {
+	padding-left: 40px;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+#footer, .bottom-footer {
+	display: none;
+}
+
+.col-sm-4 {
+	width: 100%;
+}
+
+#contact-us {
+	background-color: #000;
+}
+
+section#blog {
+	margin-top: 40px;
+	background-color: rgba(0,0,0,.4);
+}
+
+.custom-background {
+	background-image: url(wp-content/uploads/sites/15/2016/12/Background-1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: top center;
+}
+
+/* menu (responsive small one) */
+.responsive-menu {
+	background-color: rgba(0,0,0,0);
+}
+
+li.social-icon i {
+	font-size: 1em;
+}
+
+.responsive-menu ul {
+	width: 90%;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.responsive-menu ul li {
+	display: inline-block;
+}
+
+.responsive-menu ul li a {
+	color: #FFF;
+}
+
+.responsive-menu ul li:last-child a {
+	border-bottom: none !important;
+}
+
+/* this removes the menu when you go bigger but were in the menu */
+@media screen and (min-width: 992px) {
+	.responsive-menu ul {
+		display: none;
+	}
+}
+
+/*  HOMEPAGE STUFF  */
+.home .section-header {
+	display: none;
+}
+
+.home .header-front-page {
+	background-attachment: fixed !important;
+}
+
+.home h3 {
+	border-radius: 50%;
+	font-weight: 600;
+	height: 140px;
+	width: 140px;
+	background-color: rgba(200,200,200,0.2);
+	color: #000;
+	margin: 8px;
+	padding: 47px 0;
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 2.4em;
+	font-size: 1.1em;
+}
+
+.home h3:hover {
+	background-color: rgba(200,200,200,0.5);
+	-webkit-transition: .5s;
+}
+
+.home h3 a:link, .home h3 a:hover, .home-page h3 a:active, .home h3 a:visited {
+	color: #000;
+}
+
+/* PORTFOLIO or BLOG STUFF */
+.portfolio-entry-title {
+	padding: 10px;
+	font-size: 1.5em !important;
+	text-align: left;
+	line-height: 1.3em;
+}
+
+.portfolio-entry-content {
+	text-align: left;
+	font-size: 1em;
+	line-height: 1.4em;
+}
+
+.header-blog {
+	background: none !important;
+}
+
+.portfolio-entry-title a, .portfolio-entry-title a:link, .portfolio-entry-title a:hover {
+	color: #fff;
+}
+
+.portfolio-entry-title a::after {
+	content: ".";
+	color: #ffde00;
+	font-family: serif;
+}
+
+#blog h6 {
+	font-size: 24px;
+	color: #FFF;
+	line-height: 4em;
+}
+
+/*Single post STUFF */
+.blog-post-image {
+	height: 255px;
+	overflow: hidden;
+	position: relative;
+}
+
+#blog .blog-post .blog-post-image {
+	width: 255px;
+	margin-top: 180px;
+	margin-bottom: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.blog-post-image img {
+	position: relative;
+	margin: auto;
+}
+
+.single-jetpack-portfolio .bottom-header.blog {
+	margin-top: 53px;
+	display: initial !important;
+	position: absolute !important;
+}
+
+.single-jetpack-portfolio .bottom-header .container {
+	width: 700px !important;
+}
+
+.single-jetpack-portfolio .bottom-header.blog h1 {
+	font-size: 3em !important;
+	text-overflow: break-word;
+	line-height: 1em !important;
+}
+
+.single-jetpack-portfolio .bottom-header.blog h1::after {
+	content: " .";
+	color: #ffde00;
+	font-family: serif;
+}
+
+#blog .blog-post .blog-post-entry .wpum-card-details p {
+	display: none;
+}
+
+.wpum-profile-card {
+	text-align: center;
+	padding-top: 50px;
+	margin-top: 10px !important;
+}
+
+.wpum-card-button {
+	display: none;
+}
+
+/* HEADER STUFF */
+#header .bottom-header.blog {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	display: none;
+}
+
+#header .bottom-header {
+	padding: 80px 40px;
+}
+
+#header .bottom-header span.span-dot {
+	color: #ffde00;
+	font-family: serif;
+}
+
+.contact-us-box {
+	color: #aaac00;
+}
+
+.blog-post-title {
+	display: none !important;
+}
+
+/* PEOPLE STUFF */
+.user-list-wrap {
+	text-align: center;
+}
+
+.author-search {
+	display: none;
+}
+
+.author-block {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+}
+
+.author-block h2 {
+	font-size: .8em !important;
+	margin: 0;
+	padding-top: 10px;
+	line-height: 1em;
+}
+
+.author-block p {
+	display: none;
+}
+
+.avatar {
+	border-radius: 50%;
+	border: 4px solid white;
+}
+
+/* SINGLE USER STUFF */
+.wpum-single-profile .wpum-user-details {
+	background: rgba(0,0,0,0);
+	border: 0;
+}
+
+.wpum-single-profile .wpum-user-display-name {
+	margin-left: 8%;
+	font-size: 2em;
+	text-align: left;
+}
+
+.wpum-single-profile .wpum-user-display-name a {
+	color: #FFF;
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+}
+
+.wpum-single-profile .wpum-user-display-name::after {
+	content: ".";
+	color: #ffde00;
+	font-family: serif;
+	font-size: 2em;
+}
+
+.wpum-single-profile .wpum-profile-account-edit {
+}
+
+.wpum_one_fourth {
+	width: 90%;
+}
+
+.wpum-secondary-profile-details {
+	margin-right: 8%;
+}
+
+.wpum-user-links {
+	margin: 0 !important;
+}
+
+ul.wpum-user-links li {
+	list-style-type: none !important;
+	width: 150px;
+	float: right;
+	margin-right: 0 !important;
+	font-size: .8em;
+}
+
+.wpum-user-links .send-email {
+	display: none;
+}
+
+.wpum_five_sixth {
+	width: 90%;
+}
+
+.wpum-single-profile .wpum-user-description {
+	text-align: justify;
+}
+
+.wpum-single-profile .wpum-user-links li a {
+	color: #111;
+}
+
+.wpum-single-profile .wpum-user-description p:last-child {
+	margin-bottom: 30px;
+}
+
+.col-sm-8 {
+	width: 80%;
+	margin-left: 10%;
+}
+
+#blog .blog-post .blog-post-meta {
+	display: none;
+}
+
+#jp-relatedposts {
+	display: none !important;
+}
+
+#blog .blog-post .blog-post-author {
+	display: none !important;
+}
+
+#blog .blog-post .blog-post-entry {
+	color: #fff;
+}
+
+.markup-format h2 {
+	color: #fff;
+	font-size: 3em;
+}
+
+.front-page-section .section-content {
+	color: #111;
+}
+
+.page-id-60 .blog {
+	display: none !important;
+}
+
+.wpum_one_sixth {
+	width: 33.333%;
+}
+
+#header .col-sm-4{
+width:50%;
+}
+
+.markup-format table tbody {
+	color: white;
+}
+
+#wpum-directory-search-form, #wpum-directory-top-bar,
+.wpum-description, 
+.wpum-meta {
+	display: none;
+}
+
+.wpum-directory-single-user {
+	height: 120px;
+	border: 0 !important;
+	float: left;
+	margin-bottom: 20px !important;
+	pointer-events: none;
+}
+
+.wpum-directory-single-user:hover {
+	background: none !important;
+}
+
+#directory-avatar a {
+	margin: auto;
+	width: 85px;
+	height: 85px;
+	background: white;
+	border: 4px solid white;
+}
+
+#wpum-directory-users-list {
+	float: left;
+	border: none;
+}
+
+.page-id-1229 h2 {
+	font-size: 2em;
+}
+
+#directory-avatar img {
+	border-image: 5px white;
+}
+
+#directory-avatar img:hover {
+	opacity: .5;
+	filter: alpha(opacity=50);
+}
+
+section#blog {
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px;
+}
+
+.wpum-name {
+	padding: 10px 0;
+	line-height: 1em;
+	word-wrap: normal;
+	width: 100px;
+	text-align: center;
+	font-size: .8em;
+	font-weight: 800;
+}
+
+.wpum-name a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.wpum-row {
+	display: block;
+}
+
+.wpum_three_fourth {
+	width: 100%;
+}
+
+#header .top-header .header-logo {
+	font-weight: 900;
+	font-size: 40px;
+}
+
+.login-remember {
+	display: none;
+}
+
+.wpum-register-url {
+	display: none;
+}
+
+.northlab_title_card {
+	margin-top: 30px;
+}
+
+.northlab_name {
+	font-size: 2.6em;
+	font-weight: 700;
+	color: #fff;
+	line-height: .8em;
+}
+
+.northlab_jobtitle {
+	margin-top: 10px;
+	font-size: 1.5em;
+	font-weight: 400;
+	color: #fff;
+	line-height: .9em;
+}
+
+.northlab_email {
+	margin-top: 10px;
+	color: #eee;
+}
+
+.wpum-profile-page #blog .blog-post .blog-post-entry p {
+	margin-left: 8%;
+}
+
+/* RESPONSIVENESS */
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+	.single-jetpack-portfolio .bottom-header .container {
+		width: 500px !important;
+	}
+	
+	.single-jetpack-portfolio .bottom-header.blog h1 {
+		font-size: 2.4em !important;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 989px) {
+	.single-jetpack-portfolio .bottom-header .container {
+		width: 400px !important;
+	}
+	
+	.single-jetpack-portfolio .bottom-header.blog h1 {
+		font-size: 2.4em !important;
+	}
+}
+
+@media screen and (min-width:466px) and (max-width:768px) {
+	.single-jetpack-portfolio .bottom-header .container {
+		width: 400px !important;
+	}
+	
+	.single-jetpack-portfolio .bottom-header.blog h1 {
+		font-size: 2em !important;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.wpum-single-profile .wpum-user-display-name {
+		font-size: 1.5em;
+	}
+	
+	.wpum-single-profile .wpum-user-description {
+		font-size: .8em !important;
+		line-height: 1.3em;
+	}
+	
+	.col-sm-8 {
+		width: 100%;
+		margin-left: 0;
+	}
+	
+	.wpum-user-details {
+		padding: 0 !important;
+	}
+	
+	#header  .top-header .header-logo {
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width:500px) {
+	#header .bottom-header h1 {
+		font-size: 30px !important;
+	}
+}
+
+@media screen and (max-width:466px) {
+	.single-jetpack-portfolio .bottom-header .container {
+		width: 250px !important;
+	}
+	
+	.single-jetpack-portfolio .bottom-header.blog h1 {
+		font-size: 1.6em !important;
+	}
+	
+	.portfolio-entry-mobile-first-item-row {
+		width: 100% !important;
+	}
+	
+	.portfolio-entry-mobile-last-item-row {
+		width: 100% !important;
+	}
+	
+	#header .bottom-header h2 {
+		font-size: 40px;
+	}
+	
+	#header  .top-header .header-logo {
+		font-size: 20px;
+	}
+	
+	.wpum-single-profile .wpum-user-display-name {
+		font-size: 1.5em;
+	}
+	
+	.wpum-single-profile .wpum-user-description {
+		font-size: .8em !important;
+		line-height: 1.3em;
+	}
+}
+
+@media screen and (max-width:366px) {
+	.header-logo {
+		font-size: 20px;
+	}
+	
+	#header .bottom-header {
+		font-size: 20px;
+	}
+	
+	#header .bottom-header h1 {
+		font-size: 20px !important;
+		line-height: 32px !important;
+	}
+}
+
+/* Old user listing people page: (simple user list)
+ * 
+ * 
+
+.author-block {
+	display: inline-block;
+}
+
+.user-list-wrap{
+text-align:center;
+}
+
+.author-block h2 {
+	color: #000;
+	display: block;
+	font-size: .8em;
+	font-weight:500;
+	text-align: center;
+	line-height: 10px;
+margin-top:0px!important;
+}
+
+.author-block p {
+	display: none;
+}
+
+.author-block img {
+	width: 120px;
+	height: 120px;
+	margin: 11px;
+	border-radius: 999px;
+	box-shadow: none;
+	padding: 4px;
+	background-color: #fff;
+	margin-top: 0;
+	position: relative;
+}
+
+.author-block img:hover {
+	filter:brightness(120%);
+	-webkit-transition: .5s;
+	
+}
+*/

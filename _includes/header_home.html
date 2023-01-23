@@ -1,0 +1,57 @@
+<header id="header" class="header-front-page"
+		style="background-image: url(/exported-wp-dirs/wp-content/uploads/sites/15/2016/12/Background-1.jpg);background-attachment: fixed;">
+		<div class="top-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-8">
+
+						<a href="/" title="NORTH Lab" class="header-logo">NORTH Lab</a>
+
+					</div>
+					<!--/.col-sm-2-->
+					<div class="col-sm-8 col-xs-4">
+						<nav class="header-navigation">
+							<ul id="menu-navigate" class="clearfix">
+                {% for item in site.data.main_menu %}
+                  <li id="menu-item-933" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                    href="{{item.url}}">{{item.name}}</a></li>
+                {% endfor %}
+							</ul>
+						</nav>
+						<button class="open-responsive-menu"><i class="fa fa-bars"></i></button>
+					</div>
+					<!--/.col-sm-10-->
+				</div>
+				<!--/.row-->
+			</div>
+			<!--/.container-->
+		</div>
+		<!--/.top-header-->
+		<nav class="responsive-menu">
+			<ul>
+				{% for item in site.data.main_menu %}
+					<li class="menu-item menu-item-type-post_type menu-item-object-page"><a
+						href="{{item.url}}">{{item.name}}</a></li>
+				{% endfor %}
+			</ul>
+		</nav>
+		<!--/.responsive-menu-->
+		<div class="bottom-header front-page">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h1>NORTHUMBRIA TECHNOLOGY FOR HUMANITY<span class="span-dot">.</span></h1>
+					</div>
+					<!--/.col-sm-12-->
+					<div class="col-sm-8 col-sm-offset-2">
+					</div>
+					<!--/.col-sm-8.col-sm-offset-2-->
+				</div>
+				<!--/.row-->
+			</div>
+			<!--/.container-->
+		</div>
+		<!--/.bottom-header.front-page-->
+
+	</header>
+	<!--/#header-->
