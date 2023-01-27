@@ -1,0 +1,10 @@
+- name: Community Leads
+  id: community_leads
+- name: Academic Staff
+  id: academic_staff
+- name: Research Staff
+  id: research_staff
+- name: Doctoral Researchers
+  id: doctoral_researchers
+- name: Alumni
+  id: alumni

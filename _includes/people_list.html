@@ -1,0 +1,21 @@
+{% for person in current_category_people %}
+  {% assign remainder2 = forloop.index | modulo: 2 %}
+  {% assign remainder3 = forloop.index | modulo: 3 %}
+
+  <div
+    class="portfolio-entry portfolio-entry-column-3 {% if remainder2 == 1 %}portfolio-entry-mobile-first-item-row{% else %}portfolio-entry-mobile-last-item-row{% endif %} {% if remainder3 == 1 %}portfolio-entry-first-item-row{% elsif remainder3 == 0 %}portfolio-entry-last-item-row{% endif %}">
+    <header class="portfolio-entry-header">
+      <a class="portfolio-featured-image" href="{{ person.url }}"><img width="255"
+          height="255" src="{{ person.image }}" class="attachment-large size-large wp-post-image" alt=""></a>
+      <h2 class="portfolio-entry-title"><a href="{{ person.url }}" title="Lynne Coventry">{{ person.name }}</a></h2>
+
+      <div class="portfolio-entry-meta">
+      </div>
+
+    </header>
+
+    <div class="portfolio-entry-content">
+      <p>{{ person.interests }} </p>
+    </div>
+  </div>
+{% endfor %}

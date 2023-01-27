@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<link rel='stylesheet' id='jetpack-portfolio-style-css'  href='/exported-wp-dirs/wp-content/plugins/jetpack/modules/custom-post-types/css/portfolio-shortcodef8b0.css?ver=20140326' type='text/css' media='all' />
+
+<h6 style="text-align: center">Community Leads<span style="font-size: 1.3em;font-family: serif;color: #ffde00">.</span></h6>
+<div class="jetpack-portfolio-shortcode column-3">
+  {% assign current_category_people = site.people | 
+    where_exp: "person", "person.category contains 'community_leads'" %}
+
+  {% include people_list.html %}
+</div>
+
+<h6 style="text-align: center">Academic Staff<span style="font-size: 1.3em;font-family: serif;color: #ffde00">.</span></h6>
+<div class="jetpack-portfolio-shortcode column-3">
+  {% assign current_category_people = site.people | 
+    where_exp: "person", "person.category contains 'academic_staff'" %}
+
+  {% include people_list.html %}
+</div>
+
+<h6 style="text-align: center">Research Staff<span style="font-size: 1.3em;font-family: serif;color: #ffde00">.</span></h6>
+<div class="jetpack-portfolio-shortcode column-3">
+  {% assign current_category_people = site.people | 
+    where_exp: "person", "person.category contains 'research_staff'" %}
+
+  {% include people_list.html %}
+</div>
+
+<h6 style="text-align: center">Doctoral Researchers<span style="font-size: 1.3em;font-family: serif;color: #ffde00">.</span></h6>
+<div class="jetpack-portfolio-shortcode column-3">
+  {% assign current_category_people = site.people | 
+    where_exp: "person", "person.category contains 'doctoral_researchers'" %}
+
+  {% include people_list.html %}
+</div>
+
+<h6 style="text-align: center">Alumni<span style="font-size: 1.3em;font-family: serif;color: #ffde00">.</span></h6>
+<div class="jetpack-portfolio-shortcode column-3">
+  {% assign current_category_people = site.people | 
+    where_exp: "person", "person.category contains 'alumni'" %}
+
+  {% include people_list.html %}
+</div>
+{{ content }}

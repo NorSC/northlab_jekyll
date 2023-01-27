@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<h1 style="text-align: center; font-size: 3em !important;">{{ page.name }}<span style="font-size: 1.3em !important;font-family: serif;color: #ffde00">.</span></h1>
+
+<div class="blog-post-image">
+	<img width="255" height="255" src="{{ page.image }}" class="attachment-illdy-blog-list size-illdy-blog-list wp-post-image" alt="">		</div>
+
+<h4>Bio</h4>
+{{ content }}
+
+{% if page.department or page.supervisors or page.webpage or page.contact %}<h4>Details</h4>
+{% endif %}
+
+<dl>
+	{% if page.department %}
+		<dt>Home Department: {{ page.department }}</dt>
+	{% endif %}
+	{% if page.supervisors %}
+		<dt>Supervisors: {{ page.supervisors }}</dt>
+	{% endif %}
+	{% if page.webpage %}
+		<dt>Departmental Webpage: <a target="_blank" href="{{ page.webpage }}">Here.</a></dt>
+	{% endif %}
+	{% if page.contact %}
+	<dt>Contact: <a href="mailto:{{ page.contact }}">{{ page.contact }}</a></dt>
+	{% endif %}
+</dl>
