@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<h1 style="text-align: center; font-size: 3em !important;">{{ page.title }}<span style="font-size: 1.3em !important;font-family: serif;color: #ffde00">.</span></h1>
+
+{% if page.coverImage %}<div class="blog-post-image">
+	<img width="255" height="255" src="/images/{{ page.coverImage }}" class="attachment-illdy-blog-list size-illdy-blog-list wp-post-image" alt="">		</div>{% endif %}
+
+{{ content }}
+
+{%if page.details and page.details%}
+<h2>Project Details</h2>
+<dl>
+	{% for dl in page.details %}
+	<dt>{{ dl.title }}</dt>
+	<dd>{{ dl.value }}</dd>
+	{% endfor %}
+</dl>
+{% endif %}

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<link rel='stylesheet' id='jetpack-portfolio-style-css'  href='/exported-wp-dirs/wp-content/plugins/jetpack/modules/custom-post-types/css/portfolio-shortcodef8b0.css?ver=20140326' type='text/css' media='all' />
+
+<h6 style="text-align: center">Current Projects</h6>
+<div class="jetpack-portfolio-shortcode column-3">
+  {% assign current_category_projects = site.projects | 
+    where_exp: "project", "project.category contains 'current'" | sort: "date" | reverse %}
+
+  {% include project_list.html %}
+</div>
+
+<h6 style="text-align: center">Finished Projects</h6>
+<div class="jetpack-portfolio-shortcode column-3">
+  {% assign current_category_projects = site.projects | 
+    where_exp: "project", "project.category contains 'finished'" | sort: "date" | reverse %}
+
+  {% include project_list.html %}
+</div>

@@ -1,0 +1,39 @@
+{% for project in current_category_projects %}
+  {% assign remainder2 = forloop.index | modulo: 2 %}
+  {% assign remainder3 = forloop.index | modulo: 3 %}
+
+  <div
+    class="portfolio-entry portfolio-entry-column-3 {% if remainder2 == 1 %}portfolio-entry-mobile-first-item-row{% else %}portfolio-entry-mobile-last-item-row{% endif %} {% if remainder3 == 1 %}portfolio-entry-first-item-row{% elsif remainder3 == 0 %}portfolio-entry-last-item-row{% endif %}">
+    <header class="portfolio-entry-header">
+      <a class="portfolio-featured-image" href="{{ project.url }}"><img width="255"
+          height="255" src="/images/{{ project.coverImage }}" class="attachment-large size-large wp-post-image" alt=""></a>
+      <h2 class="portfolio-entry-title"><a href="{{ project.url }}" title="Lynne Coventry">{{ project.title }}</a></h2>
+
+      <div class="portfolio-entry-meta">
+      </div>
+
+    </header>
+
+    <div class="portfolio-entry-content">
+      {% assign first_words = project.content | strip_html | slice: 0, 14 %}
+
+      {% if first_words contains "Abstract" %}
+        {% assign letter_count = project.content | strip_html | size | minus: 9 %}
+        {% capture strippedContent %}
+          {{ project.content | strip_html | slice: 9, letter_count }}
+        {% endcapture %}
+
+        {% capture excerpt_words %}
+          {{ strippedContent | truncatewords: 56 | number_of_words }}
+        {% endcapture %}
+        <p>{{ strippedContent | truncatewords: 56, " [...]" }}
+      {% else %}
+        {% capture excerpt_words %}
+          {{ project.content | strip_html | truncatewords: 56 | number_of_words }}
+        {% endcapture %}
+        <p>{{ project.content | strip_html | truncatewords: 56, " [...]" }}
+      {% endif %}
+
+    </div>
+  </div>
+{% endfor %}

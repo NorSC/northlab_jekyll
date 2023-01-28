@@ -37,13 +37,16 @@ collections:
   people:
     output: true
     permalink: /portfolio/:name
+  projects:
+    output: true
+    permalink: /portfolio/:name
 
 defaults:
   - scope:
       path: ''
-      type: 'people'
+      type: 'projects'
     values:
-      layout: 'person'
+      layout: 'project'
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
