@@ -1,5 +1,6 @@
 - name: CoCreate
-  url: https://cocreatenorthumbria.org/
+  # url: https://cocreatenorthumbria.org/
+  url: https://hosting.northumbria.ac.uk/cocreate/
   img: /exported-wp-dirs/wp-content/uploads/sites/15/2020/03/CoCreate-link.jpg
 
 - name: NorSC
